@@ -4,7 +4,7 @@ import AppHeader from '../AppHeader.vue';
 
 
 export default{
-    name: AppHome,
+    name: 'AppHome',
     components: { 
         AppFooter, 
         AppHeader

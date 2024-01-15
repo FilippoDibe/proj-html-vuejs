@@ -3,7 +3,7 @@ import AppFooter from '../AppFooter.vue';
 import AppHeader from '../AppHeader.vue';
 
 export default{
-    name: AppShop,
+    name: 'AppShop',
     components: { 
         AppHeader,
         AppFooter
