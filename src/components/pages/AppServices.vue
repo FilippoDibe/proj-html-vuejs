@@ -1,12 +1,27 @@
 <script>
+import AppFooter from '../AppFooter.vue';
+import AppHeader from '..AppHeader.vue/';
+
 export default{
     name: AppServices,
+    components: {
+        AppHeader,
+        AppFooter,
+        
+    }
+      
+
 }
 </script>
 
 <template>
+    <AppHeader/>
 
-</template>
+   
+   
+   
+    <AppFooter/>
+
 
 <style lang="scss">
 
