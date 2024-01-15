@@ -1,6 +1,10 @@
 <script>
 </script>
 
-<template></template>
+<template>
 
-<style lang="scss"></style>
+</template>
+
+<style lang="scss">
+
+</style>
