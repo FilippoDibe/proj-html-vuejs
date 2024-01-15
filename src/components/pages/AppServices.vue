@@ -1,6 +1,6 @@
 <script>
 import AppFooter from '../AppFooter.vue';
-import AppHeader from '..AppHeader.vue/';
+import AppHeader from '../AppHeader.vue/';
 
 export default{
     name: 'AppServices',
@@ -15,14 +15,13 @@ export default{
 </script>
 
 <template>
+
     <AppHeader/>
 
    
-   
-   
     <AppFooter/>
 
-
+<template/>
 <style lang="scss">
 
 </style>

@@ -5,8 +5,8 @@ import AppHome from './components/pages/AppHome.vue'
 export default{
   components:{
     AppHeader,
-  AppFooter,
-  AppHome
+    AppFooter,
+    AppHome,
   }
  
 
@@ -14,8 +14,9 @@ export default{
 </script>
 
 <template>
-  <AppHeader/>
-
+  <main>
+    <AppHome/>
+  </main>
 </template>
 
 <style lang="scss"></style>
