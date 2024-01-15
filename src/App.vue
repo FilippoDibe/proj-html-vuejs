@@ -1,6 +1,18 @@
-<script setup>
+<script >
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+import AppHome from './components/pages/AppHome.vue'
+export default{
+  components:
+  AppHeader,
+  AppFooter,
+  AppHome
+
+}
 </script>
 
-<template></template>
+<template>
+  
+</template>
 
 <style lang="scss"></style>
