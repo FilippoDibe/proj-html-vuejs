@@ -5,28 +5,20 @@ export default {
 </script>
 
 <template>
+
   <footer>
+
     <div id="container">
+
       <div id="row">
+
         <div class="card" id="contacts-card">
           <img src="../img/home/logo.PNG" alt="" class="img" />
-          <p class="list-item no-hover">
-            Built to the smallest detail with a focus on feature availability.
-          </p>
-          <div class="list-item">
-            <i class="fa-solid fa-phone"></i> +1 (305) 1234-5678
-          </div>
-          <div class="list-item">
-            <i class="fa-solid fa-envelope"></i> hello@example.com
-          </div>
-          <div class="list-item">
-            <i class="fa-solid fa-location-dot"></i> Main Avenue, 987
-          </div>
-          <a
-            href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361"
-            id="btn"
-            >BUY NEXGEN</a
-          >
+          <p class="list-item no-hover">Built to the smallest detail with a focus on feature availability.</p>
+          <div class="list-item"> <i class="fa-solid fa-phone"></i> +1 (305) 1234-5678</div>
+          <div class="list-item"><i class="fa-solid fa-envelope"></i> hello@example.com</div>
+          <div class="list-item"> <i class="fa-solid fa-location-dot"></i> Main Avenue, 987 </div>
+          <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">BUY NEXGEN</a>
         </div>
 
         <div class="card card-hover">
@@ -62,8 +54,22 @@ export default {
           </ul>
         </div>
       </div>
+
     </div>
+
+    <div id="box">
+        <div id="box-margin">
+            <div class="btn-footer">© 2023 - All rights reserved. Nexgen is maintained by Codings Group.</div>
+            <div id="logos-container">
+                <i class="fa-brands fa-facebook-f btn-footer"></i>
+                <i class="fa-brands fa-twitter btn-footer"></i>
+                <i class="fa-brands fa-linkedin-in btn-footer"></i>
+            </div>
+        </div>
+    </div>
+
   </footer>
+
 </template>
 
 <style lang="scss" scoped>
@@ -124,6 +130,8 @@ export default {
   margin: auto;
 }
 
+
+// stile della card con i contatti
 #contacts-card {
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
@@ -143,11 +151,13 @@ export default {
     padding: 10px;
     width: 140px;
     border-radius: 30px;
+    transition: all 0.5s;
   }
 
-  #btn:hover {
-    border-color: white;
-  }
+//  effetti hover
+    #btn:hover {
+        border-color: white;
+    }
 
   .no-hover:hover{
     color: #888c9e;
@@ -157,5 +167,33 @@ export default {
 
 .card-hover:hover{
     margin-bottom: 20px;
+}
+
+// footer con i link social
+#box{
+    width: 100%;
+    height: 60px;
+    background-color: #0c1a2a;
+    background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
+    color: #888c9e;
+    font-size: 18px;
+
+    #box-margin{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+    #logos-container{
+        display: flex;
+        gap: 30px;
+    }
+
+    .btn-footer:hover{
+        color:rgb(67, 129, 95);
+        cursor: pointer; 
+    }
 }
 </style>

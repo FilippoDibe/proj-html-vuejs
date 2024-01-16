@@ -5,15 +5,16 @@ import AppHeader from '../AppHeader.vue';
 
 export default{
     name: 'AppHome',
-    components: { 
-        AppFooter, 
-        AppHeader
+    components: {  
+        AppHeader,
+        AppFooter,
     }
 }
 </script>
 
 <template>
-    <AppHeader/>
+    
+    <header><AppHeader/></header>
 
 
 
