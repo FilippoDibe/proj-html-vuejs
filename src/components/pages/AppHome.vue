@@ -25,8 +25,9 @@ export default{
 
         <div id="title">
             <h1>Excellence in 
-                <span class="title-decor" style="color: #048282;z-index: 1;">Services <span class="color-block"></span></span>
+                <span class="title-decor" style="color: #048282;z-index: 1;">Services </span>  
             </h1>
+            <div class="color-block"></div>
         </div>
 
         <div id="p-and-button">
@@ -108,7 +109,6 @@ export default{
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 
             </div>
-
             
         </div>      
 
@@ -139,7 +139,7 @@ export default{
 }
 
 #box-services{
-    width: 75%;
+    width: 60%;
     max-width: 80%;
     margin: auto;
     display: flex;
@@ -151,25 +151,20 @@ export default{
     #title{
         align-self: flex-start;
         margin-bottom: 30px;
-        z-index: 1;
+        position: relative;
 
         .title-decor{
             position: relative;
         }
         .color-block{
-            width: 200px;
+            width: 190px;
             height: 25px;
-            background-color: #c1dadf4f;
-            position: absolute;
+            background-color: #c1dadf;
+            position: absolute; 
+            left: 320px;
             top: 25px;
-            left: 0;
-            border-radius: 5px;
-            z-index: 0;
         }
-
     }
-
-    
 
     h1{
         font-size: 48px;
