@@ -14,13 +14,20 @@ export default{
 <template>
 <AppHeader/>
 
+ <div>
 
+ </div>
 
 
 
 <AppFooter/>
 </template>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+    div{ 
+        background-color: red;
+        width: 100%;
+        height: 500px;
+    
+    }
 </style>
