@@ -1,18 +1,27 @@
 <script>
-import { store } from '../store.js'
+import { store } from '../store';
+
 export default{
     name: 'AppHeader',
-    mounted(){
-        store.setupScrollListener();
+    data(){
+        return{
+            store,
+        }
     },
-    beforeDestroy(){
-        store.removeScrollListener();
-    }
+
+   mounted(){
+    store.setupScrollListener();
+   },
+
+   beforeUnmount(){
+    store.removeScrollListener();
+   }
+
 }
 </script>
 
 <template>
-<header :class="{'scrolled': isScrolled, 'hidden': isHidden}">
+<header :class="{'hidden': store.isHidden }">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container-fluid ">
@@ -51,16 +60,14 @@ export default{
 
  header{
     background-color:white ;
-    transition: background-color 0.3s;
-    position: fixed;
+    position: sticky;
     top: 0;
+    width: 100%;
 
-    header.scrolled{
-        background-color: #0d1b2a;
-    }
+   
 
     header.hidden{
-        top:-100%;
+        display: none;
     }
  }
 
