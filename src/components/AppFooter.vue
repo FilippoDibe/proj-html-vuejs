@@ -29,7 +29,7 @@ export default {
           >
         </div>
 
-        <div class="card">
+        <div class="card card-hover">
           <ul class="card-list">
             <h3 class="list-title">Company</h3>
             <li class="list-item">Institutional</li>
@@ -40,7 +40,7 @@ export default {
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card card-hover">
           <ul class="card-list">
             <h3 class="list-title">Services</h3>
             <li class="list-item">Audit & Assurance</li>
@@ -51,7 +51,7 @@ export default {
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card card-hover">
           <ul class="card-list">
             <h3 class="list-title">Consultants</h3>
             <li class="list-item">David Cooper</li>
@@ -95,6 +95,7 @@ export default {
   border: none;
   border-radius: 10px;
   padding: 35px;
+  transition: all 0.5s;
 
   .list-title {
     margin-bottom: 20px;
@@ -152,5 +153,9 @@ export default {
     color: #888c9e;
     cursor: default;
   }
+}
+
+.card-hover:hover{
+    margin-bottom: 20px;
 }
 </style>
