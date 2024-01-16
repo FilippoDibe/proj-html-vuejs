@@ -1,14 +1,12 @@
 @use 'partials/variables' as*;
 // bootstrap 
 @import 'node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/@fontsource/montserrat';
+// @import 'node_modules/@fontsource/montserrat';
 
 
-
+//stili generali
 body {
     font-family: 'Montserrat Variable', sans-serif;
-    color: black;
-    background-color: white;
 
     background-image: linear-gradient(to left,
             transparent opx,
@@ -27,4 +25,5 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat Variable', sans-serif;
 }
