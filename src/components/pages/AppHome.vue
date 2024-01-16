@@ -13,15 +13,29 @@ export default{
 </script>
 
 <template>
-    
     <header><AppHeader/></header>
 
+    <div id="jumbotron">
+        
+    </div>
 
 
 
-    <AppFooter/>
+    <footer><AppFooter/></footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+// stili generali
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+#jumbotron{
+    background-color: grey;
+    width: 100%;
+    height: 100vh;
+}
 </style>
