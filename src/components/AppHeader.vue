@@ -41,13 +41,19 @@ export default {
                 <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <router-link to="/" class="nav-link active" aria-current="page">Home</router-link>
+                            <router-link :to="{ name: 'home' }" class="nav-link active" aria-current="page">
+                                Home
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/services" class="nav-link">Servizi</router-link>
+                            <router-link :to="{ name: 'services'}" class="nav-link">
+                                Servizi
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/shop" class="nav-link">Shop</router-link>
+                            <router-link :to="{ name: 'shop'}" class="nav-link">
+                                Shop
+                            </router-link>
 
                         </li>
                     </ul>
