@@ -21,15 +21,19 @@ export default {
             <div class="content-overlay">
                 <h1>Services</h1>
                 <div class="d-flex justify-content-around">
-                    <a href="" class="m-3">home</a>
-                    <a href="" class="m-3">services</a>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="">Library</a></li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
             <div class="position-absolute w-100 h-100" style="background-color: #05050a9c;"></div>
         </div>
 
         <div class="advantages-container d-flex align-items-center justify-content-center w-100">
-            <div class="advantages-content row justify-content-center justify-content-around p-0 flex-nowrap">
+            <div class="advantages-content row justify-content-around p-0 flex-nowrap">
                 <div class="ad-card col-4 mb-4 h-100 d-flex flex-column align-items-center">
                     <div class="ad-img-container w-100">
                         <div class="ad-img d-flex align-items-center justify-content-center">
@@ -229,59 +233,195 @@ export default {
                 strategy development to implementation.
             </p>
 
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            <div class="w-100 d-flex justify-content-center">
+                <div class="pricing-container row justify-content-around p-0 flex-nowrap w-100">
+                    <div class="col-4 mb-4 h-100 d-flex flex-column align-items-center">
+                        <div class="price-card w-100 position-relative">
+
+                            <div class="header-price w-100 d-flex flex-column align-items-center">
+                                <div>
+                                    <i class="fa-solid fa-rocket main-logo"></i>
+                                </div>
+                                <h4>Standard</h4>
+                                <div class="price-block">
+                                    <h3>$ 490 / mo</h3>
+                                </div>
+                            </div>
+
+                            <div class="body-price w-100">
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Standard Accounting</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Platform Access</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Business Orientation</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Decaded consultant</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Personal assistance</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute" style="top: 5%;right: 10%;">
+                                <i class="fa-solid fa-arrow-right fa-xl"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+
+                    <div class="col-4 mb-4 h-100 d-flex flex-column align-items-center">
+                        <div class="price-card w-100 position-relative">
+
+                            <div class="header-price w-100 d-flex flex-column align-items-center">
+                                <div>
+                                    <i class="fa-solid fa-suitcase main-logo"></i>
+                                </div>
+                                <h4>professional</h4>
+                                <div class="price-block">
+                                    <h3>$ 490 / mo</h3>
+                                </div>
+                            </div>
+
+                            <div class="body-price w-100">
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Standard Accounting</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Platform Access</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Business Orientation</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Decaded consultant</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Personal assistance</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute" style="top: 5%;right: 10%;">
+                                <i class="fa-solid fa-arrow-right fa-xl"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                        <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
-                            </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    <div class="col-4 mb-4 h-100 d-flex flex-column align-items-center">
+                        <div class="price-card w-100 position-relative">
+
+                            <div class="header-price w-100 d-flex flex-column align-items-center">
+                                <div>
+                                    <i class="fa-regular fa-gem main-logo"></i>
+                                </div>
+                                <h4>Ultimate</h4>
+                                <div class="price-block">
+                                    <h3>$ 490 / mo</h3>
+                                </div>
+                            </div>
+
+                            <div class="body-price w-100">
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Standard Accounting</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Platform Access</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Business Orientation</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Decaded consultant</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between">
+                                    <div>
+                                        <p>Personal assistance</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute" style="top: 5%;right: 10%;">
+                                <i class="fa-solid fa-arrow-right fa-xl"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -416,6 +556,45 @@ export default {
 
     h6 {
         color: rgb(5, 130, 131);
+    }
+
+    h2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .pricing-container {
+
+        .price-card {
+            background-color: white;
+            min-height: 200px;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+
+            i,
+            h3 {
+                color: rgb(0, 166, 166);
+            }
+
+            .main-logo {
+                font-size: 2.5em;
+                margin: 10px 0;
+            }
+
+            h4 {
+                font-weight: 700;
+                margin: 5px 0;
+            }
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .body-price {
+                margin: 15px 0;
+            }
+        }
     }
 }
 </style>
