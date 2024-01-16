@@ -1,27 +1,49 @@
 <script>
 import AppFooter from '../AppFooter.vue';
-import AppHeader from '../AppHeader.vue/';
+import AppHeader from '../AppHeader.vue';
 
-export default{
+export default {
     name: 'AppServices',
     components: {
         AppHeader,
         AppFooter,
-        
+
     }
-      
+
 
 }
 </script>
 
 <template>
+    <AppHeader />
 
-    <AppHeader/>
+    <div class="header-services d-flex flex-column align-items-center justify-content-center">
+        <h1>Services</h1>
+        <div class="d-flex">
+            <a href="" class="m-3">home</a>
+            <a href="" class="m-3">services</a>
+        </div>
+    </div>
+    <div class="advantages-container d-flex align-items-center justify-content-center">
+        <div class="advantages-content">
 
-   
-    <AppFooter/>
+        </div>
 
+    </div>
+
+
+    <AppFooter />
 </template>
 <style lang="scss">
+.header-services {
+    min-height: 360px;
+    color: grey;
+    border: 1px solid black;
+}
 
+.advantages-container {
+    min-height: 370px;
+}
+
+.advantages-content {}
 </style>
