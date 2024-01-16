@@ -13,7 +13,7 @@ export default{
 </script>
 
 <template>
-    <header><AppHeader/></header>
+    <AppHeader/>
 
     <div id="jumbotron">
         
@@ -21,10 +21,10 @@ export default{
 
 
 
-    <footer><AppFooter/></footer>
+    <AppFooter/>
 </template>
 
-<style lang="scss" >
+<style lang="scss"  >
 // stili generali
 *{
     margin: 0;

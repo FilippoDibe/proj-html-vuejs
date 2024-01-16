@@ -16,6 +16,8 @@ export default{
 <template>
   <main>
     <AppHome/>
+    <router-view></router-view>
+
   </main>
 </template>
 
