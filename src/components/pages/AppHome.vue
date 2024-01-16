@@ -24,7 +24,7 @@ export default{
     <footer><AppFooter/></footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 // stili generali
 *{
     margin: 0;

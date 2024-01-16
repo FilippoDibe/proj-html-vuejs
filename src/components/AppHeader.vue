@@ -1,30 +1,32 @@
 <script>
-import { store } from '../store';
 
-export default{
+import { isScrolled, isHidden, setupScrollListener, removeScrollListener } from '../store.js';
+
+export default {
     name: 'AppHeader',
-    data(){
-        return{
-            store,
-        }
+    
+    mounted() {
+        setupScrollListener();
     },
 
-   mounted(){
-    store.setupScrollListener();
-   },
-
-   beforeUnmount(){
-    store.removeScrollListener();
-   }
-
+    beforeUnmount() {
+        removeScrollListener();
+    },
+    computed: {
+        isScrolled(){
+            return isScrolled.value;
+        },
+        isHidden() {
+            return isHidden.value;
+        },
+    },
 }
 </script>
 
 <template>
-<header :class="{'hidden': store.isHidden }">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid ">
+    <header :class="{ 'scrolled': isScrolled, 'hidden': isHidden, 'transparent': isTransparent }">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Logo a sinistra -->
                 <a class="navbar-brand" href="#">
                     <img src="../img/home/logo.PNG" alt="Logo" height="40px"> 
@@ -49,26 +51,33 @@ export default{
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </div>
-</header>
+            </nav>
+        </div>
+    </header>
 </template>
 
 <style lang="scss" scoped>
- @use '../styles/general.scss';
+@use '../styles/general.scss';
 
- header{
-    background-color:white ;
-    position: sticky;
+header {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s, top 0.3s;
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 
-   
-
-    header.hidden{
-        display: none;
+    &.scrolled {
+        background-color: #0d1b2a; 
+        color: white;
     }
- }
 
+    &.hidden {
+
+        display: none; 
+    }
+    &.transparent{
+        background-color:rgb(255, 255, 255) ;
+    }
+}
 </style>
