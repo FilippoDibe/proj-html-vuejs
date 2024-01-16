@@ -116,6 +116,17 @@ export default{
 
 </div>
 
+<!-- sezione  the company-->
+<div id="container-company">
+    <div id="box-company-text">
+
+    </div>
+
+    <div id="box-company-image">
+
+    </div>
+</div>
+
 <footer><AppFooter/></footer>
 
 </template>
@@ -234,6 +245,32 @@ export default{
 
 .card:hover{
     transform: translateY(-20px);
+}
+
+
+
+
+// sezione stili the company
+#container-company{
+    width: 100%;
+    height: 635px;
+    background-color: #0c1a2a;
+    background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
+    display: flex ;
+
+    #box-company-text{
+        width: 50%;
+    }
+
+    #box-company-image{
+        width: 50%;
+        background-image: url("../../img/home/about-4.jpg");
+        background-attachment: fixed;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+    }
+    
 }
 
 </style>
