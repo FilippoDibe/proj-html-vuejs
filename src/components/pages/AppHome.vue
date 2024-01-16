@@ -15,108 +15,109 @@ export default{
 <template>
     <AppHeader/>
 
-    <!-- sezione con il carosello -->
-    <div id="jumbotron"></div>
+<!-- sezione con il carosello -->
+<div id="jumbotron"></div>
 
-    <!-- sezione con la lista dei servizi -->
-    <div id="container-services">
+<!-- sezione con la lista dei servizi -->
+<div id="container-services">
 
-        <div id="box-services">
+    <div id="box-services">
 
-            <div id="title">
-                <h1>Excellence in 
-                    <span class="title-decor" style="color: #048282;z-index: 1;">Services <span class="color-block"></span></span>
-                </h1>
+        <div id="title">
+            <h1>Excellence in 
+                <span class="title-decor" style="color: #048282;z-index: 1;">Services <span class="color-block"></span></span>
+            </h1>
+        </div>
+
+        <div id="p-and-button">
+            <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+            <a href="" id="btn">SEE ALL</a>
+        </div>
+        
+        <!-- sezione con le cards services -->
+        <div id="row-services">
+
+            <div class="card">
+
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-network-wired" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <h3>Audit  & Assurance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+
             </div>
 
-            <div id="p-and-button">
-                <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
-                <a href="" id="btn">SEE ALL</a>
+            <div class="card">
+
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-briefcase" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <h3>Financial Advisory</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-chart-simple" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <h3>Analytics and M&A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+
             </div>
             
-            <!-- sezione con le cards services -->
-            <div id="row-services">
+            <div class="card">
 
-                <div class="card">
-
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-network-wired" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-
-                    <h3>Audit  & Assurance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-plane" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
-                <div class="card">
+                <h3>Middle Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-briefcase" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+            </div>
 
-                    <h3>Financial Advisory</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div class="card">
 
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-globe" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
-                <div class="card">
+                <h3>Legal Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-chart-simple" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+            </div>
 
-                    <h3>Analytics and M&A</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div class="card">
 
-                </div>
-                
-                <div class="card">
-
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-plane" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-
-                    <h3>Middle Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-
+                <div class="icon-and-btn">
+                    <i class="fa-solid fa-folder-open" style="font-size: 50px;"></i>
+                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
 
-                <div class="card">
+                <h3>Audit  & Assurance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-globe" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+            </div>
 
-                    <h3>Legal Consulting</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-
-                </div>
-
-                <div class="card">
-
-                    <div class="icon-and-btn">
-                        <i class="fa-solid fa-folder-open" style="font-size: 50px;"></i>
-                        <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-
-                    <h3>Audit  & Assurance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-
-                </div>
-
-                
-            </div>      
-
-        </div>
+            
+        </div>      
 
     </div>
 
-    <footer><AppFooter/></footer>
+</div>
+
+<footer><AppFooter/></footer>
+
 </template>
 
 <style lang="scss" scoped>
@@ -237,7 +238,7 @@ export default{
 }
 
 .card:hover{
-    transform: translateY(-20px)
+    transform: translateY(-20px);
 }
 
 </style>
