@@ -12,7 +12,7 @@ export const store = reactive({
 
             this.lastScrollPosition= currentScrollPosition
               
-        }
+        },
         setupScrollListener() {
             window.addEventListener('scroll', this.navScroll);
         },
