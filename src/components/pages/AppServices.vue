@@ -24,9 +24,13 @@ export default {
             <a href="" class="m-3">services</a>
         </div>
     </div>
-    <div class="advantages-container d-flex align-items-center justify-content-center">
-        <div class="advantages-content">
+    <div class="advantages-container d-flex align-items-center justify-content-center w-100">
+        <div class="advantages-content row">
+            <div class="">
 
+            </div>
+            <div></div>
+            <div></div>
         </div>
 
     </div>
@@ -45,5 +49,10 @@ export default {
     min-height: 370px;
 }
 
-.advantages-content {}
+.advantages-content {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: red;
+}
 </style>
