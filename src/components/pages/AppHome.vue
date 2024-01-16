@@ -119,15 +119,18 @@ export default{
 <!-- sezione  the company-->
 <div id="container-company">
     <div id="box-company-text">
-
+        <div id="title-company">
+            <h1>Excellence in 
+                <span class="title-decor" style="z-index: 1;">Services </span>  
+            </h1>
+            <div class="color-block"></div>
+        </div>
     </div>
 
     <div id="box-company-image">
 
     </div>
 </div>
-
-<footer><AppFooter/></footer>
 
 </template>
 
@@ -260,6 +263,26 @@ export default{
 
     #box-company-text{
         width: 50%;
+        height: 100%;
+
+        #title-company{
+        align-self: flex-start;
+        margin-bottom: 30px;
+        position: relative;
+        color: white;
+
+        .title-decor{
+            position: relative;
+        }
+        .color-block{
+            width: 190px;
+            height: 25px;
+            background-color: #0b4653;
+            position: absolute; 
+            left: 320px;
+            top: 25px;
+        }
+    }
     }
 
     #box-company-image{
