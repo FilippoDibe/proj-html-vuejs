@@ -114,6 +114,7 @@ export default {
 
   h3 {
     color: white;
+    cursor: pointer;
   }
 
   .fa-solid {
