@@ -132,6 +132,7 @@ export default {
 
     .pricing-container {
         margin-top: 30px;
+        max-width: 1200px;
 
         .price-card {
             background-color: white;

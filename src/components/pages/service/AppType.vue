@@ -97,6 +97,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-width: 1200px;
         width: 90%;
 
         .service-content {
@@ -105,8 +106,8 @@ export default {
 
             .card-service {
                 background-color: rgb(25, 25, 31);
-                min-height: 200px;
-                margin: 10px 0;
+                height: 300px;
+                margin: 20px 0;
                 border-radius: 5px;
                 padding: 15px;
 

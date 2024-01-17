@@ -5,195 +5,146 @@ export default {
 </script>
 
 <template>
+  <footer class="d-flex flex-column align-items-center">
 
-  <footer>
+    <div class="container d-flex align-items-center justify-content-center ">
 
-    <div id="container">
+      <div class="row footer-content justify-content-center align-items-center p-0 h-100 w-100">
 
-      <div id="row">
-
-        <div class="card" id="contacts-card">
-          <img src="../img/home/logo.PNG" alt="" class="img" />
-          <p class="list-item no-hover">Built to the smallest detail with a focus on feature availability.</p>
-          <div class="list-item"> <i class="fa-solid fa-phone"></i> +1 (305) 1234-5678</div>
-          <div class="list-item"><i class="fa-solid fa-envelope"></i> hello@example.com</div>
-          <div class="list-item"> <i class="fa-solid fa-location-dot"></i> Main Avenue, 987 </div>
-          <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">BUY NEXGEN</a>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-card " style="background-color: transparent;">
+            <div class="w-100">
+              <img src="../img/home/logo.PNG" alt="" class="img" style="width: 80px;" />
+            </div>
+            <p class="list-items no-hover">
+              Built to the smallest detail with a focus on feature availability.
+            </p>
+            <div class="list-items">
+              <i class="fa-solid fa-phone"></i>
+              <span> +1 (305) 1234-5678</span>
+            </div>
+            <div class="list-items">
+              <i class="fa-solid fa-envelope"></i>
+              <span> hello@example.com</span>
+            </div>
+            <div class="list-items">
+              <i class="fa-solid fa-location-dot"></i>
+              <span> Main Avenue, 987</span>
+            </div>
+            <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">
+              <span> BUY NEXGEN</span>
+            </a>
+          </div>
         </div>
 
-        <div class="card card-hover">
-          <ul class="card-list">
+        <div class="col-12 col-md-6 col-lg-3 ">
+          <div class="footer-card">
             <h3 class="list-title">Company</h3>
-            <li class="list-item">Institutional</li>
-            <li class="list-item">Social & Events</li>
-            <li class="list-item">Innovation</li>
-            <li class="list-item">Enviroment</li>
-            <li class="list-item">Technology</li>
-          </ul>
+            <p class="list-item">David Cooper</p>
+            <p class="list-item">Oliver Jones</p>
+            <p class="list-item">Emma Lopez</p>
+            <p class="list-item">T. Johnson</p>
+            <p class="list-item">Jacob Hill Jr</p>
+          </div>
         </div>
 
-        <div class="card card-hover">
-          <ul class="card-list">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-card">
             <h3 class="list-title">Services</h3>
-            <li class="list-item">Audit & Assurance</li>
-            <li class="list-item">Financial Advisory</li>
-            <li class="list-item">Analytics and M&A</li>
-            <li class="list-item">Middle Marketing</li>
-            <li class="list-item">Legal Consulting</li>
-          </ul>
+            <p class="list-item">David Cooper</p>
+            <p class="list-item">Oliver Jones</p>
+            <p class="list-item">Emma Lopez</p>
+            <p class="list-item">T. Johnson</p>
+            <p class="list-item">Jacob Hill Jr</p>
+          </div>
         </div>
 
-        <div class="card card-hover">
-          <ul class="card-list">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-card">
             <h3 class="list-title">Consultants</h3>
-            <li class="list-item">David Cooper</li>
-            <li class="list-item">Oliver Jones</li>
-            <li class="list-item">Emma Lopez</li>
-            <li class="list-item">T. Johnson</li>
-            <li class="list-item">Jacob Hill Jr</li>
-          </ul>
+            <p class="list-item">David Cooper</p>
+            <p class="list-item">Oliver Jones</p>
+            <p class="list-item">Emma Lopez</p>
+            <p class="list-item">T. Johnson</p>
+            <p class="list-item">Jacob Hill Jr</p>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <div id="box">
-        <div id="box-margin">
-            <div class="btn-footer">© 2023 - All rights reserved. Nexgen is maintained by Codings Group.</div>
-            <div id="logos-container">
-                <i class="fa-brands fa-facebook-f btn-footer"></i>
-                <i class="fa-brands fa-twitter btn-footer"></i>
-                <i class="fa-brands fa-linkedin-in btn-footer"></i>
-            </div>
-        </div>
+    <div class="last-title d-flex w-100 justify-content-between align-items-center">
+      <span>© 2023 - All rights reserved. Nexgen is maintained by Codings Group.</span>
+      <div class="logo-block d-flex justify-content-around" style="width: 100px;">
+        <i class="fa-brands fa-facebook-f btn-footer"></i>
+        <i class="fa-brands fa-twitter btn-footer"></i>
+        <i class="fa-brands fa-linkedin-in btn-footer"></i>
+      </div>
     </div>
 
   </footer>
-
 </template>
 
 <style lang="scss" scoped>
- @use '../styles/general.scss';
-#container {
-  width: 100%;
-  height: 572px;
-  background-color: #0c1a2a;
+footer {
   background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-#row {
-  width: 80%;
-  height: 55%;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.02);
-  width: calc(100% / 4);
-  max-width: 270px;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-  padding: 35px;
-  transition: all 0.5s;
-
-  .list-title {
-    margin-bottom: 20px;
-  }
-
-  .list-item {
-    color: #888c9e;
-    height: 100%;
-    font-size: 18px;
-    cursor: pointer;
-  }
-
-  .list-item:hover {
-    color: rgb(9, 153, 105);
-  }
-}
-
-.card-list {
-  color: white;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-  height: 100%;
-  margin: auto;
-}
-
-
-// stile della card con i contatti
-#contacts-card {
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0);
-  height: 100%;
-
-  .img {
-    width: 60%;
-    margin-bottom: 20px;
-    height: 50px;
-  }
-
-  #btn {
-    text-decoration: none;
+  * {
     color: white;
-    border: 2px solid rgb(67, 129, 95);
-    text-align: center;
-    padding: 10px;
-    width: 140px;
-    border-radius: 30px;
-    transition: all 0.5s;
   }
 
-//  effetti hover
-    #btn:hover {
-        border-color: white;
-    }
+  .container {
+    padding: 60px 0;
 
-  .no-hover:hover{
-    color: #888c9e;
-    cursor: default;
-  }
-}
+    .footer-content {
+      max-width: 1200px;
+      //margin: 0 auto;
 
-.card-hover:hover{
-    margin-bottom: 20px;
-}
-
-// footer con i link social
-#box{
-    width: 100%;
-    height: 60px;
-    background-color: #0c1a2a;
-    background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
-    color: #888c9e;
-    font-size: 18px;
-
-    #box-margin{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      .footer-card {
+        background-color: rgba(255, 255, 255, 0.02);
         height: 100%;
-        margin: auto;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        transition: all 0.5s;
+        margin: 10px 0;
+
+        p,
+        span {
+          font-size: 0.8em;
+          color: rgb(143, 147, 165);
+        }
+
+        h3 {
+          font-size: 1.3em;
+          font-weight: bold;
+          margin: 20px 0;
+        }
+
+        .list-items {
+          margin: 10px 0;
+        }
+      }
     }
-    #logos-container{
-        display: flex;
-        gap: 30px;
+  }
+
+  .last-title {
+    height: 60px;
+
+    span,
+    i {
+      font-size: 0.8em;
+      color: rgb(143, 147, 165);
     }
 
-    .btn-footer:hover{
-        color:rgb(67, 129, 95);
-        cursor: pointer; 
+    span {
+      margin-left: 10px;
     }
+
+    .logo-block {
+      margin-right: 10px;
+    }
+  }
+
 }
 </style>

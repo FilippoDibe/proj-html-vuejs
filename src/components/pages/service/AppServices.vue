@@ -48,6 +48,9 @@ export default {
                 </div>
             </div>
             <div class="position-absolute w-100 h-100" style="background-color: #05050a9c;"></div>
+            <div class="position-absolute img-points">
+                <img src="../../../img/home/bullets.png" class="w-100 h-100" alt="">
+            </div>
         </div>
 
 
@@ -92,11 +95,17 @@ export default {
         #aHome:hover {
             color: rgb(0, 166, 166);
         }
+
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
     }
 
-    h1 {
-        font-size: 4em;
-        font-weight: bold;
+    .img-points {
+        width: 110px !important;
+        height: 70px !important;
+        bottom: -10%;
     }
 }
 </style>
