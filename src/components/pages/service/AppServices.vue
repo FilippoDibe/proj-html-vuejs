@@ -1,7 +1,14 @@
 <script>
+import Advantage from './AppAdvantage.vue';
+import Type from './AppType.vue';
+import Price from './AppPrice.vue';
+
 export default {
     name: 'AppServices',
     components: {
+        Advantage,
+        Type,
+        Price,
     }
 
 
@@ -11,8 +18,7 @@ export default {
 <template>
     <div>
 
-        <div class="header-services d-flex flex-column align-items-center justify-content-center position-relative"
-            style="background-image: url('https://nexgen.codings.dev/wp-content/uploads/2021/03/work.mp4');">
+        <div class="header-services d-flex flex-column align-items-center justify-content-center position-relative">
             <video autoplay muted loop playsinline class="background-video">
                 <source src="https://nexgen.codings.dev/wp-content/uploads/2021/03/work.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
