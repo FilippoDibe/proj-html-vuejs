@@ -32,7 +32,7 @@ export default {
             <div class="card-service">
                 <div class="d-flex justify-content-between font-section">
                     <div>
-                        <i class="fa-solid fa-wave-square big-font" style="color: rgb(5, 130, 131);"></i>
+                        <i class="fa-solid fa-suitcase big-font" style="color: rgb(5, 130, 131);"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-arrow-right fa-xl" style="color: rgb(5, 130, 131);"></i>
@@ -55,7 +55,7 @@ export default {
             <div class="card-service">
                 <div class="d-flex justify-content-between font-section">
                     <div>
-                        <i class="fa-solid fa-wave-square big-font" style="color: rgb(5, 130, 131);"></i>
+                        <i class="fa-solid fa-chart-line big-font" style="color: rgb(5, 130, 131);"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-arrow-right fa-xl" style="color: rgb(5, 130, 131);"></i>
@@ -78,7 +78,7 @@ export default {
             <div class="card-service">
                 <div class="d-flex justify-content-between font-section">
                     <div>
-                        <i class="fa-solid fa-wave-square big-font" style="color: rgb(5, 130, 131);"></i>
+                        <i class="fa-solid fa-plane big-font" style="color: rgb(5, 130, 131);"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-arrow-right fa-xl" style="color: rgb(5, 130, 131);"></i>
@@ -101,7 +101,7 @@ export default {
             <div class="card-service">
                 <div class="d-flex justify-content-between font-section">
                     <div>
-                        <i class="fa-solid fa-wave-square big-font" style="color: rgb(5, 130, 131);"></i>
+                        <i class="fa-solid fa-globe big-font" style="color: rgb(5, 130, 131);"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-arrow-right fa-xl" style="color: rgb(5, 130, 131);"></i>
@@ -124,7 +124,7 @@ export default {
             <div class="card-service">
                 <div class="d-flex justify-content-between font-section">
                     <div>
-                        <i class="fa-solid fa-wave-square big-font" style="color: rgb(5, 130, 131);"></i>
+                        <i class="fa-solid fa-exclamation big-font" style="color: rgb(5, 130, 131);"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-arrow-right fa-xl" style="color: rgb(5, 130, 131);"></i>
