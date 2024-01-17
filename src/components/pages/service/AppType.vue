@@ -97,6 +97,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-width: 1200px;
         width: 90%;
 
         .service-content {

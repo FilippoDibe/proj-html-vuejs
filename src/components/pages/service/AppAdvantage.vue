@@ -48,9 +48,11 @@ export default {
 <style lang="scss" scoped>
 .advantages-container {
     background-color: rgb(238, 244, 237);
+    padding: 60px 0;
 
     .advantages-content {
         width: 90%;
+        max-width: 1200px;
         margin: 0 auto;
 
 
