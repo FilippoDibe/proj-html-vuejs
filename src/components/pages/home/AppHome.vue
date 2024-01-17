@@ -2,6 +2,7 @@
 import AppProjects from '../home/AppProjects.vue';
 import AppCompany from '../home/AppCompany.vue'
 import AppServicesHome from '../home/AppServicesHome.vue'
+import AppResults from '../home/AppResults.vue'
 
 export default{
     name: 'AppHome',
@@ -9,7 +10,7 @@ export default{
         AppServicesHome,
         AppCompany,
         AppProjects,
-
+        AppResults,
     }
 };
 </script>
@@ -24,6 +25,7 @@ export default{
 <AppServicesHome />
 <AppCompany />
 <AppProjects />
+<AppResults />
 
 </template>
 
