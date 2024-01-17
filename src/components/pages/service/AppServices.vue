@@ -86,7 +86,7 @@ export default {
 
         #aHome {
             color: rgb(212, 212, 212);
-            transition: all 0.5s;
+            transition: all 0.1s;
         }
 
         #aHome:hover {
