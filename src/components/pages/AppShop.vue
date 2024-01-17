@@ -111,7 +111,6 @@ export default{
             </div>
           </div>
         </div>
-        
         <!-- Sidebar placeholders for demonstration -->
         <div class="col-md-3">
           <div class="mb-4">
