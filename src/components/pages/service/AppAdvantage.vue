@@ -28,7 +28,7 @@ export default {
 
 <template>
     <div class="advantages-container d-flex align-items-center justify-content-center w-100">
-        <div class="advantages-content row justify-content-around align-items-center p-0 h-100">
+        <div class="advantages-content row justify-content-center align-items-center p-0 h-100">
             <div class="ad-card col-12 col-sm-5 col-md-3 mb-4 h-100 d-flex flex-column align-items-center"
                 v-for="element in adList">
                 <div class="ad-img-container w-100">

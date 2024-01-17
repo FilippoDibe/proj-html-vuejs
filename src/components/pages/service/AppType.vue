@@ -106,8 +106,8 @@ export default {
 
             .card-service {
                 background-color: rgb(25, 25, 31);
-                min-height: 200px;
-                margin: 10px 0;
+                height: 300px;
+                margin: 20px 0;
                 border-radius: 5px;
                 padding: 15px;
 
