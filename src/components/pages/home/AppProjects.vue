@@ -16,6 +16,16 @@ export default {
             </h1>
             <div class="color-block"></div>
         </div>
+
+        <ul id="menu">
+            <li>ALL</li>
+            <li>ENVIROMENTS</li>
+            <li>EVENTS</li>
+            <li>INSTITUTIONAL</li>
+            <li>SOCIAL</li>
+            <li>TECHNOLOGY</li>
+            <li>INNOVATION</li>
+        </ul>
         
         <div id="row">
 
@@ -24,6 +34,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
             
@@ -32,6 +43,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
 
@@ -40,6 +52,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
 
@@ -48,6 +61,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
 
@@ -56,6 +70,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
 
@@ -64,6 +79,7 @@ export default {
                 <div class="info">
                     <h3>Portfolio item with intro with sidebar</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
+                    <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i class="fa-regular fa-clock"></i> 3 years</div>
                 </div>    
             </div>
         </div>      
@@ -77,7 +93,7 @@ export default {
 
 #container{
     width: 100%;
-    min-height: 910px;
+    min-height: 1180px;
     background-color: #e2e2e6; 
     display: flex;
     justify-content: center;
@@ -119,6 +135,25 @@ export default {
     }
 }
 
+#menu{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li{
+        background-color: #00A6A626;
+        color: #058283;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right:25px ;
+        border-radius: 3px;
+    }
+}
+
 #row {
   width: 100%;
   min-height: 370px;
@@ -134,7 +169,7 @@ export default {
 .card {
   width: calc(100% / 3 - 30px);
   max-width: 370px;
-  height: 100%;
+  height: 360px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -164,6 +199,7 @@ export default {
     top: 0;
     left: 0;
     border-radius: 10px;
+    filter: brightness(0.6) contrast(0.6) saturate(1.2) contrast(1.5);
   }
   
 }
@@ -184,7 +220,6 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
   z-index: 2;
   transition: 0.5s;
   opacity: 0;
