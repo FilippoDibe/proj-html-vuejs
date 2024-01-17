@@ -74,7 +74,7 @@ export default{
 
 
 <template>
-    <div class="container my-5">
+    <div class="container total my-5">
       <!-- Header: Showing results and sorting -->
       <div class="row mb-3 align-items-center">
         <div class="col-6">
@@ -137,7 +137,6 @@ export default{
 
 <style lang="scss" scoped>
     .total{
-        margin-top: 300px;
-    
+      padding-top: 200px;
     }
 </style>
