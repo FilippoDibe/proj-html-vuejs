@@ -135,6 +135,19 @@ export default {
     }
 }
 
+#row {
+  width: 100%;
+  min-height: 370px;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+//stili della lista 
 #menu{
     display: flex;
     width: 100%;
@@ -151,21 +164,11 @@ export default {
         padding-left: 25px;
         padding-right:25px ;
         border-radius: 3px;
+        cursor: pointer;
     }
 }
 
-#row {
-  width: 100%;
-  min-height: 370px;
-  height: 100%;
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
+//stili delle cards
 .card {
   width: calc(100% / 3 - 30px);
   max-width: 370px;
