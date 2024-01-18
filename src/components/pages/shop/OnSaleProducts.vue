@@ -11,49 +11,58 @@ export default {
 }
 </script>
 <template>
-    <div class="border p-3 mb-4">
-  <h5>Prodotti in Offerta</h5>
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" 
-       v-for="product in onSaleProducts" :key="product.id">
-      <img :src="product.imageUrl" class="img-fluid mr-3" alt="..." style="width: 50px; height: auto;">
-      <div>
-        {{ product.name }} - <span class="fw-bold">{{ product.priceSale | currency }}</span>
+    <div class="onsale-products">
+      <h5 class="title">Prodotti in Offerta</h5>
+      <div class="product-list">
+        <div class="product-item" style="border-bottom: 1px solid grey;" v-for="product in onSaleProducts" :key="product.id">
+          <img :src="product.imageUrl" class="product-image" alt="Immagine del prodotto">
+          <div class="product-details">
+            <span class="product-name">{{ product.name }}</span>
+            <span class="product-price">{{ product.priceSale | currency }}€</span>
+          </div>
+        </div>
       </div>
-    </a>
-  </div>
-</div>
-</template>
-<style>
-      .list-group-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-  }
+    </div>
+  </template>
   
-  .sale-badge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  <style lang="scss">
+  .onsale-products {
+    padding: 16px;
+    // border: 1px solid #E2E3E7; // utilizzare il colore grigio chiaro della palette
+    margin-bottom: 24px;
+    .title {
+      margin-bottom: 16px;
+      color: #000; // si può scegliere un colore dalla palette se necessario
+      font-weight: bold;
+    }
+    .product-list {
+      .product-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        border-bottom: 1px grey;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .product-image {
+          width: 50px; // larghezza immagine
+          margin-right: 10px; // spazio tra immagine e testo
+        }
+        .product-details {
+          display: flex;
+          flex-direction: column;
+          .product-name {
+            font-size: 14px; // dimensione testo nome prodotto
+            color: #000; // si può scegliere un colore dalla palette se necessario
+          }
+          .product-price {
+            font-size: 14px; // dimensione testo prezzo prodotto
+            color: #00A6A6; // utilizzare il colore turchese dalla palette
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
+  </style>
   
-  .border {
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
-  }
-  
-  .form-range {
-    /* Stili personalizzati per il range slider */
-  }
-  
-  .list-group {
-    /* Stili aggiuntivi per i gruppi di elenchi */
-  }
-  
-  .badge {
-    font-size: 0.8rem;
-    margin: 0.2rem;
-  }
-</style>

@@ -1,5 +1,4 @@
 <script>
-import { shop } from '../../../store.js';
 import PriceFilter from './PriceFilter.vue';
 import ShopCart from './ShopCart.vue';
 import OnSaleProducts from './OnSaleProducts.vue';
@@ -28,9 +27,9 @@ export default {
     <!-- prodotti in offerta  -->
         <OnSaleProducts/>
     <!-- categoria prodotti  -->
-      <ProductCategories/>
+      <ProductCategories />
     <!-- tags prodtti  -->
-      <ProductTags/>
+      <ProductTags :tags="tags" @tag-selected="handleTagSelect"/>
     </div>
   </template>
   
