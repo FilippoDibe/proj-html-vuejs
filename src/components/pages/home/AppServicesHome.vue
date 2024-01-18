@@ -284,11 +284,6 @@ export default {
     }
 }
 
-
-
-
-
-
 //effetti cards on hover
 .card:hover {
     transform: translateY(-20px);
