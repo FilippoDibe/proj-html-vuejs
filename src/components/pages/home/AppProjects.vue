@@ -207,6 +207,7 @@ export default {
   
 }
 
+
 .card:hover:before {
   opacity: 1;
 }

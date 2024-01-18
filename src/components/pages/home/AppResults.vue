@@ -58,7 +58,7 @@ export default {
       <img src="../../../img/loghi/logo-2.png" alt="" class="sponsor" />
       <img src="../../../img/loghi/logo-3.png" alt="" class="sponsor" />
       <img src="../../../img/loghi/logo-4.png" alt="" class="sponsor" />
-      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" />
+      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" style="width: 80px;"/>
       <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" />
     </div>
   </div>

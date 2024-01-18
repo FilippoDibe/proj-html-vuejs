@@ -189,6 +189,10 @@ export default {
   transition: all 0.5s;
   cursor: pointer;
 
+  a{
+    text-decoration: none;
+  }
+
   h3{
     font-size: 20px;
     font-weight: 600;
