@@ -31,8 +31,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-network-wired" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>                </div>
 
                 <h3>Audit  & Assurance</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
@@ -43,7 +42,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-briefcase" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>
                 </div>
 
                 <h3>Financial Advisory</h3>
@@ -55,8 +54,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-chart-simple" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>                </div>
 
                 <h3>Analytics and M&A</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
@@ -67,8 +65,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-plane" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>                </div>
 
                 <h3>Middle Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
@@ -79,8 +76,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-globe" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>                </div>
 
                 <h3>Legal Consulting</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
@@ -91,8 +87,7 @@ export default {
 
                 <div class="icon-and-btn">
                     <i class="fa-solid fa-folder-open" style="font-size: 50px;"></i>
-                    <a href="" style="font-size: 30px;"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                    <a href="" style="font-size: 30px;" class="wrapper"><div class="pulse"><i class="fa-solid fa-arrow-right"></i></div></a>                </div>
 
                 <h3>Audit  & Assurance</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
@@ -208,11 +203,43 @@ export default {
 
     .fa-solid{
         color: #048282;
+        position: relative;
     }
   }
 }
 
+
+
+
+//effetti cards on hover
 .card:hover{
     transform: translateY(-20px);
+
+    .pulse{
+        position: relative;
+        animation: animate 3s linear infinite;
+        border-radius: 50%;
+        display: flex;
+        border-color: none;
+
+        .pulse i{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    @keyframes animate{
+        0%{box-shadow: 0 0 0 0 #048282b7 , 0 0 0 0 };
+        50%{box-shadow: 0 0 0 20px rgb(255, 109, 74, 0) , 0 0 0 0 #048282b7};
+        100%{box-shadow: 0 0 0 0 rgb(255, 109, 74, 0) , 0 0 0 20px rgb(255, 109, 74, 0)};
+    }
 }
+
+
+
+
+
 </style>

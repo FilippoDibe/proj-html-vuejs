@@ -22,20 +22,20 @@ export default {
       </p>
       <div id="row">
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Certifications</h5>
+          <div class="counter1"></div>
+          <h5>Certifications</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Employees</h5>
+          <div class="counter2"></div>
+          <h5>Employees</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Customers</h5>
+          <div class="counter3"></div>
+          <h5>Customers</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Countries Served</h5>
+          <div class="counter4"></div>
+          <h5>Countries Served</h5>
         </div>
       </div>
     </div>
@@ -126,8 +126,8 @@ export default {
   align-items: center;
   flex-direction: column;
 
-  p{
-    color: #BEC1CE;
+  p {
+    color: #bec1ce;
     margin-bottom: 30px;
   }
 
@@ -151,19 +151,19 @@ export default {
     }
   }
 
-  #row{
+  #row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .card{
-        width: calc(100% / 4);
-        background: none;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .card {
+      width: calc(100% / 4);
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -173,9 +173,9 @@ h1 {
   font-weight: 800;
 }
 
-h5{
-    color: #BEC1CE;
-    font-size: 18px;
+h5 {
+  color: #bec1ce;
+  font-size: 18px;
 }
 
 //stili del counter
@@ -186,7 +186,7 @@ h5{
 }
 
 .counter1 {
-    color:#00a7a7 ;
+  color: #00a7a7;
   animation: counter 5s infinite alternate ease-in-out;
   counter-reset: num var(--num);
   font: 800 40px system-ui;
@@ -203,4 +203,5 @@ h5{
     --num: 128;
   }
 }
+
 </style>
