@@ -39,7 +39,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -50,7 +50,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -61,7 +61,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -72,7 +72,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -83,7 +83,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -94,7 +94,7 @@ export default {
                         <h3>Portfolio item with intro with sidebar</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum...</p>
                         <div><i class="fa-solid fa-user"></i> <span style="margin-right: 15px;">Codings </span> <i
-                                class="fa-regular fa-clock"></i> 3 years</div>
+                                class="fa-regular fa-clock"></i> <span>3 years</span></div>
                     </div>
                     <div class="dark-div position-absolute w-100 h-100"></div>
                 </div>
@@ -230,6 +230,10 @@ export default {
                         font-size: 0.8em;
                         margin: 15px 0;
                         text-align: center;
+                    }
+
+                    span {
+                        font-size: 0.8em;
                     }
                 }
 
