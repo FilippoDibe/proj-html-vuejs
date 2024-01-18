@@ -31,12 +31,10 @@ export default {
               <i class="fa-solid fa-location-dot"></i>
               <span> Main Avenue, 987</span>
             </div>
-            <div class="buy-but d-flex align-items-center justify-content-center">
-              <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">
-                <span> BUY NEXGEN</span>
-              </a>
-            </div>
-
+            <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn"
+              class="buy-but d-flex align-items-center justify-content-center text-decoration-none">
+              <span> BUY NEXGEN</span>
+            </a>
           </div>
         </div>
 
@@ -127,8 +125,19 @@ footer {
           margin: 10px 0;
         }
 
-        .but-but {
-          width: 100px;
+        .buy-but {
+          width: 150px;
+          height: 50px;
+          font-size: 1.3em;
+          margin-top: 10px;
+          border: 1.5px solid #05828380;
+          border-radius: 50px;
+          transition: all 0.5s;
+        }
+
+        .buy-but:hover {
+          border-color: white;
+          color: white;
         }
       }
 
@@ -137,7 +146,7 @@ footer {
       }
 
       .card-hover:hover {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
       }
     }
   }

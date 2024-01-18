@@ -8,12 +8,14 @@ export default {
   <div id="container-company">
     <div id="box-company-text">
       <div id="box-margin-company-text">
-        <div id="title-company">
-          <h1 style="font-size: 48px; font-weight: 700">
+        <div id="title-company" class="d-flex">
+          <h1>
             The
-            <span class="title-decor">Company</span>
           </h1>
-          <div class="color-block"></div>
+          <div class="position-relative">
+            <span class="title-decor"> Company</span>
+            <div class="color-block"></div>
+          </div>
         </div>
         <p>
           For 12 years we have been providing audit and warranty, financial
@@ -51,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 #container-company {
   width: 100%;
-  height: 635px;
+  padding: 50px 0;
   background-color: #0c1a2a;
   background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
   display: flex;
@@ -61,30 +63,107 @@ export default {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding-left: 15px;
+
+    @media screen and (max-width:767px) {
+      width: 100%;
+    }
 
     #box-margin-company-text {
-      width: 70%;
-      margin: auto;
+
 
       #title-company {
         align-self: flex-start;
         position: relative;
         color: white;
 
-        .title-decor {
-          position: relative;
-          z-index: 1;
+        @media screen and (max-width:767px) {
+          display: flex;
+          justify-content: center;
         }
-        .color-block {
-          width: 220px;
-          height: 25px;
-          background-color: #0b4653;
-          border-radius: 3px;
-          position: absolute;
-          left: 100px;
-          top: 25px;
+
+        h1 {
+          font-size: 3em;
+          font-weight: 700;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          margin-right: 5px;
+
+          @media screen and (max-width:400px) {
+            font-size: 1.6em;
+          }
+        }
+
+        .position-relative {
+          .title-decor {
+            position: relative;
+            z-index: 1;
+            font-size: 3em;
+            font-weight: bold;
+
+            @media screen and (max-width: 400px) {
+              font-size: 1.6em;
+            }
+          }
+
+          .color-block {
+            width: 220px;
+            height: 25px;
+            background-color: #0e6f85;
+            border-radius: 3px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+
+            @media screen and (max-width:400px) {
+              width: 116px;
+              top: 8px;
+            }
+          }
+
+        }
+
+
+
+      }
+
+      #company-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width:767px) {
+          margin-top: 60px;
+
+          @media screen and (max-width:450px) {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        h3 {
+          color: white;
+          cursor: pointer;
+        }
+
+        .fa-solid {
+          color: #048282;
+        }
+
+        .card-company {
+          width: calc(100% / 2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            max-width: 250px;
+            text-align: center;
+          }
         }
       }
     }
@@ -92,6 +171,14 @@ export default {
     p {
       color: #888c9e;
       margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      p,
+      h3 {
+        text-align: center;
+      }
     }
   }
 
@@ -102,27 +189,10 @@ export default {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 50% auto;
-  }
-}
 
-#company-row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-
-  h3 {
-    color: white;
-    cursor: pointer;
-  }
-
-  .fa-solid {
-    color: #048282;
-  }
-
-  .card-company {
-    width: calc(100% / 2);
+    @media screen and (max-width:767px) {
+      display: none;
+    }
   }
 }
 </style>
