@@ -16,7 +16,7 @@
             <span v-if="product.sale" class="text-decoration-line-through">{{ product.price | currency }}</span>
             <span class="fw-bold">{{ product.sale ? product.priceSale : product.price | currency }}</span>
           </p>
-          <button class="btn btn-primary w-100">Add to Cart</button>
+          <button class="btn btn-primary w-100" @click="$emit('add-to-cart', product)">Add to Cart</button>
         </div>
       </div>
     </div>

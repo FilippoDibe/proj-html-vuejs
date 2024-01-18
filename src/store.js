@@ -181,6 +181,7 @@ export const shop = reactive({
     imageUrl: "https://www.rick.srl/cdn/shop/products/air-jordan-1-high-dior-476140.png?v=1682807644&width=700",
     }
   ],
+  cart: [],
   selectedCategory: null,
   selectedTag: null,
   minPrice: 0,
@@ -197,6 +198,25 @@ setPriceRange(minPrice, maxPrice) {
     this.minPrice = minPrice;
     this.maxPrice = maxPrice;
 },
+addToCart(product) {
+    const productInCart = this.cart.find(p => p.id === product.id);
+    if (productInCart) {
+      productInCart.quantity++;
+    } else {
+      this.cart.push({...product, quantity: 1});
+    }
+  },
+
+  removeFromCart(productId) {
+    const productIndex = this.cart.findIndex(p => p.id === productId);
+    if (productIndex !== -1) {
+      if (this.cart[productIndex].quantity > 1) {
+        this.cart[productIndex].quantity--;
+      } else {
+        this.cart.splice(productIndex, 1);
+      }
+    }
+  },
 getFilteredProducts() {
     let result = this.products;
 
@@ -234,7 +254,10 @@ getFilteredProducts() {
       tags.add(product.color);
     });
     return Array.from(tags);
-  }
+  },
+  get cartTotal() {
+    return this.cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  },
 
 });
 
