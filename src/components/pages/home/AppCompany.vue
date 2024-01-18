@@ -53,7 +53,6 @@ export default {
 <style lang="scss" scoped>
 #container-company {
   width: 100%;
-  padding: 50px 0;
   background-color: #0c1a2a;
   background-image: linear-gradient(50deg, #0c1a2a, #0c1a2a, #1a4865, #1a4865);
   display: flex;
@@ -71,7 +70,7 @@ export default {
     }
 
     #box-margin-company-text {
-
+      padding: 50px 0;
 
       #title-company {
         align-self: flex-start;
