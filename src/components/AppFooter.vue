@@ -16,7 +16,7 @@ export default {
             <div class="w-100">
               <img src="../img/home/logo.PNG" alt="" class="img" style="width: 80px;" />
             </div>
-            <p class="list-items no-hover">
+            <p class="list-items">
               Built to the smallest detail with a focus on feature availability.
             </p>
             <div class="list-items">
@@ -31,13 +31,16 @@ export default {
               <i class="fa-solid fa-location-dot"></i>
               <span> Main Avenue, 987</span>
             </div>
-            <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">
-              <span> BUY NEXGEN</span>
-            </a>
+            <div class="buy-but d-flex align-items-center justify-content-center">
+              <a href="https://themeforest.net/item/nexgen-multipurpose-allinone-wordpress-theme/31222361" id="btn">
+                <span> BUY NEXGEN</span>
+              </a>
+            </div>
+
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 ">
+        <div class="col-12 col-md-6 col-lg-3 card-hover">
           <div class="footer-card">
             <h3 class="list-title">Company</h3>
             <p class="list-item">David Cooper</p>
@@ -48,7 +51,7 @@ export default {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 card-hover">
           <div class="footer-card">
             <h3 class="list-title">Services</h3>
             <p class="list-item">David Cooper</p>
@@ -59,7 +62,7 @@ export default {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 card-hover">
           <div class="footer-card">
             <h3 class="list-title">Consultants</h3>
             <p class="list-item">David Cooper</p>
@@ -98,7 +101,6 @@ footer {
 
     .footer-content {
       max-width: 1200px;
-      //margin: 0 auto;
 
       .footer-card {
         background-color: rgba(255, 255, 255, 0.02);
@@ -124,6 +126,18 @@ footer {
         .list-items {
           margin: 10px 0;
         }
+
+        .but-but {
+          width: 100px;
+        }
+      }
+
+      .card-hover {
+        transition: all 0.5s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-20px);
       }
     }
   }

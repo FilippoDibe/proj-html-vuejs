@@ -1,6 +1,14 @@
 <script>
 export default {
   name: "AppResults",
+  mounted() {
+    const counterElements = document.querySelectorAll(".counter1");
+    counterElements.forEach((element) => {
+      const dataPercent = element.getAttribute("data-percent");
+      element.style.setProperty("--num", 0);
+      element.style.setProperty("--target-num", dataPercent);
+    });
+  },
 };
 </script>
 
@@ -22,20 +30,20 @@ export default {
       </p>
       <div id="row">
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Certifications</h5>
+          <div class="counter1" data-percent="128"></div>
+          <h5>Certifications</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Employees</h5>
+          <div class="counter1" data-percent="230"></div>
+          <h5>Employees</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Customers</h5>
+          <div class="counter1" data-percent="517"></div>
+          <h5>Customers</h5>
         </div>
         <div class="card">
-            <div class="counter1"></div>
-            <h5>Countries Served</h5>
+          <div class="counter1" data-percent="94"></div>
+          <h5>Countries Served</h5>
         </div>
       </div>
     </div>
@@ -55,7 +63,6 @@ export default {
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
 #container {
   width: 100%;
@@ -126,7 +133,7 @@ export default {
   align-items: center;
   flex-direction: column;
 
-  p{
+  p {
     color: #BEC1CE;
     margin-bottom: 30px;
   }
@@ -141,6 +148,7 @@ export default {
     .title-decor {
       position: relative;
     }
+
     .color-block {
       width: 240px;
       height: 25px;
@@ -151,19 +159,19 @@ export default {
     }
   }
 
-  #row{
+  #row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .card{
-        width: calc(100% / 4);
-        background: none;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .card {
+      width: calc(100% / 4);
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -173,9 +181,9 @@ h1 {
   font-weight: 800;
 }
 
-h5{
-    color: #BEC1CE;
-    font-size: 18px;
+h5 {
+  color: #BEC1CE;
+  font-size: 18px;
 }
 
 //stili del counter
@@ -186,21 +194,19 @@ h5{
 }
 
 .counter1 {
-    color:#00a7a7 ;
-  animation: counter 5s infinite alternate ease-in-out;
+  color: #00a7a7;
+  animation: counter 5s forwards;
   counter-reset: num var(--num);
   font: 800 40px system-ui;
 }
+
 .counter1::after {
   content: counter(num);
 }
 
 @keyframes counter {
-  from {
-    --num: 0;
-  }
   to {
-    --num: 128;
+    --num: var(--target-num);
   }
 }
 </style>
