@@ -37,7 +37,7 @@ export default {
                     </div>
                 </div>
                 <h3>{{ element.title }}</h3>
-                <p class="text-center">
+                <p class="ad-desc text-center">
                     {{ element.desc }}
                 </p>
             </div>
@@ -48,7 +48,7 @@ export default {
 <style lang="scss" scoped>
 .advantages-container {
     background-color: rgb(238, 244, 237);
-    padding: 60px 0;
+    padding: 50px 0;
 
     .advantages-content {
         width: 90%;
@@ -58,7 +58,7 @@ export default {
 
         .ad-card {
             background-color: white;
-            height: 250px;
+            height: 300px;
             margin: 0 10px 20px;
             border-radius: 10px;
             padding: 15px;
@@ -82,6 +82,8 @@ export default {
             p {
                 margin: 10px 0;
                 font-size: 0.8em;
+                font-size: 1.1em;
+                color: rgb(96, 111, 117);
             }
 
         }

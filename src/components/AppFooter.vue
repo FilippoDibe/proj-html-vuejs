@@ -146,7 +146,7 @@ footer {
       }
 
       .card-hover:hover {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
       }
     }
   }

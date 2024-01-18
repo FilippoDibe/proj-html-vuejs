@@ -48,9 +48,7 @@ export default {
                 </div>
             </div>
             <div class="position-absolute w-100 h-100" style="background-color: #05050a9c;"></div>
-            <div class="position-absolute img-points">
-                <img src="../../../img/home/bullets.png" class="w-100 h-100" alt="">
-            </div>
+            <div class="position-absolute img-points"></div>
         </div>
 
 
@@ -103,9 +101,11 @@ export default {
     }
 
     .img-points {
-        width: 110px !important;
-        height: 70px !important;
-        bottom: -10%;
+        background-image: url('../../../img/home/bullets.png');
+        background-size: cover;
+        width: 120px !important;
+        height: 46px !important;
+        bottom: -6.5%;
     }
 }
 </style>
