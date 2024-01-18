@@ -29,10 +29,10 @@ export default {
                     <input type="number" placeholder="Phone">
                     <select name="" id="">
                         <option value="1" selected>--Please choose an option--</option>
-                        <option value="">Sales an Purchasing</option>
-                        <option value="">Financial and Account</option>
-                        <option value="">Human Resources</option>
-                        <option value="">Another subject</option>
+                        <option value="2">Sales an Purchasing</option>
+                        <option value="3">Financial and Account</option>
+                        <option value="4">Human Resources</option>
+                        <option value="5">Another subject</option>
                     </select>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <a href="">SEND</a>
@@ -59,7 +59,7 @@ export default {
 #container{
     width: 100%;
     min-height: 760px;
-    height: 760px;
+    height: 100%;
     background-image:url("https://nexgen.codings.dev/wp-content/uploads/2021/03/nexgen-background.png");
     background-size:cover ;
     background-attachment: fixed;
@@ -112,6 +112,8 @@ export default {
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap: 20px;
+
+                
                 
 
                 input{
@@ -217,5 +219,54 @@ export default {
     }
 
 }
+
+//media query
+
+@media all and (max-width: 900px) {
+
+    #container{
+        display: block;
+
+        #box-margin{
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box-left{
+            width: 100%;
+        }
+
+        #box-right{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+
+    #container #box-margin #box-left #info-box{
+        flex-direction: column;
+
+        input{
+            width: 100%;
+        }
+
+        select{
+            width: 100%;
+        }
+
+        a{
+           width: 120px; 
+           text-align: center;
+        }
+    }
+
+}
+
+
 
 </style>
