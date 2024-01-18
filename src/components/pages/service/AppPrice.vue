@@ -40,8 +40,8 @@ export default {
         <div class="w-100 d-flex justify-content-center">
 
         </div>
-        <div class="pricing-container row justify-content-around align-items-center p-0 w-100 h-100">
-            <div class="col-12 col-sm-6 col-md-4 mb-4 h-100 d-flex flex-column align-items-center"
+        <div class="pricing-container row justify-content-center align-items-center p-0 w-100 h-100">
+            <div class="column-card col-12 col-sm-6 col-md-4 mb-4 h-100 d-flex flex-column align-items-center"
                 v-for="element in priceList">
                 <div class="price-card w-100 position-relative">
 
@@ -134,50 +134,55 @@ export default {
         margin-top: 30px;
         max-width: 1200px;
 
-        .price-card {
-            background-color: white;
-            min-height: 200px;
-            margin: 5px;
-            padding: 10px;
-            border-radius: 10px;
-            transition: all 0.5s;
+        .column-card {
+            padding: 20px;
 
-            i,
-            h3 {
-                color: rgb(0, 166, 166);
+            .price-card {
+                background-color: white;
+                min-height: 200px;
+                margin: 5px;
+                padding: 10px;
+                border-radius: 10px;
+                transition: all 0.5s;
+
+                i,
+                h3 {
+                    color: rgb(0, 166, 166);
+                }
+
+                .main-logo {
+                    font-size: 2.5em;
+                    margin: 10px 0;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    margin: 5px 0;
+                }
+
+                h3 {
+                    margin: 10px 0;
+                }
+
+                .body-price {
+                    margin: 15px 0;
+                }
+
+                .price-popular {
+                    background-color: rgb(0, 166, 166);
+                    font-size: 0.7em;
+                    padding: 5px;
+                    left: 0;
+                    top: 4%;
+                    border-bottom-right-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
             }
 
-            .main-logo {
-                font-size: 2.5em;
-                margin: 10px 0;
+            .price-card:hover {
+                transform: translateY(-20px);
             }
 
-            h4 {
-                font-weight: 700;
-                margin: 5px 0;
-            }
-
-            h3 {
-                margin: 10px 0;
-            }
-
-            .body-price {
-                margin: 15px 0;
-            }
-
-            .price-popular {
-                background-color: rgb(0, 166, 166);
-                font-size: 0.7em;
-                padding: 5px;
-                left: 0;
-                top: 4%;
-                border-bottom-right-radius: 20px;
-                border-top-right-radius: 20px;
-            }
-        }
-
-        .price-card:hover {
-            transform: translateY(-20px);
         }
     }
 }
