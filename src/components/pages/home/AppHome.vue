@@ -33,11 +33,4 @@ export default {
   <AppContacts />
 </template>
 
-<style lang="scss" scoped>
-// stili del carosello
-#jumbotron {
-  background-color: grey;
-  width: 100%;
-  height: 100vh;
-}
-</style>
+<style lang="scss" scoped></style>
