@@ -215,7 +215,7 @@ h5 {
     width: 50%;
   }
 
-  #box #title .color-block[data-v-eb2d6663] {
+  #box #title .color-block {
     left: 0px;
     top: 90px;
   }

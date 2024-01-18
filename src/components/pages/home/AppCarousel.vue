@@ -114,7 +114,7 @@ export default {
   </swiper>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .swiper {
   height: 100vh;
   background: #ffffff;
