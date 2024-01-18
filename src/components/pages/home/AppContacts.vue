@@ -16,7 +16,7 @@ export default {
         <div id="box-margin">
             <div id="box-left">
 
-                <div style="color:#2aa9a7 ;">SEND A MESSAGE</div>
+                <div style="color:#2aa9a7 ; margin-top: 20px;">SEND A MESSAGE</div>
                 <div id="title">
                     <h1>Get in <span class="title-decor" style="color: #048282;z-index: 1;">Touch </span></h1>
                     <div class="color-block"></div>
@@ -264,6 +264,16 @@ export default {
            text-align: center;
         }
     }
+
+}
+
+@media all and (max-width: 510px) {
+
+    #container #box-margin #box-left #title .color-block[data-v-9e8bf8d6] {
+    left: 10px;
+    top: 90px;
+}
+
 
 }
 

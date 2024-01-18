@@ -56,10 +56,10 @@ export default {
     <div id="box-sponsor">
       <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" />
       <img src="../../../img/loghi/logo-2.png" alt="" class="sponsor" />
-      <img src="../../../img/loghi/logo-3.png" alt="" class="sponsor" />
-      <img src="../../../img/loghi/logo-4.png" alt="" class="sponsor" />
-      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" style="width: 80px;"/>
-      <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" />
+      <img src="../../../img/loghi/logo-3.png" alt="" class="sponsor"  id="hide4"/>
+      <img src="../../../img/loghi/logo-4.png" alt="" class="sponsor"  id="hide3"/>
+      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" style="width: 80px;" id="hide2"/>
+      <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" id="hide1"/>
     </div>
   </div>
 </template>
@@ -207,6 +207,28 @@ h5 {
 @keyframes counter {
   to {
     --num: var(--target-num);
+  }
+}
+
+@media all and (max-width: 656px){
+  #box #row .card {
+    width: 50%;
+  }
+
+  #box #title .color-block[data-v-eb2d6663] {
+    left: 0px;
+    top: 90px;
+  }
+
+  #container-sponsor #box-sponsor #hide1 {
+    display: none;
+  }
+}
+
+@media all and (max-width: 490px){
+
+  #container-sponsor #box-sponsor #hide2, #hide3, #hide4 {
+    display: none;
   }
 }
 </style>
