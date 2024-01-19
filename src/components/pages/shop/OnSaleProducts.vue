@@ -28,11 +28,10 @@ export default {
   <style lang="scss">
   .onsale-products {
     padding: 16px;
-    // border: 1px solid #E2E3E7; // utilizzare il colore grigio chiaro della palette
     margin-bottom: 24px;
     .title {
       margin-bottom: 16px;
-      color: #000; // si può scegliere un colore dalla palette se necessario
+      color: #000;
       font-weight: bold;
     }
     .product-list {
@@ -45,19 +44,19 @@ export default {
           margin-bottom: 0;
         }
         .product-image {
-          width: 50px; // larghezza immagine
-          margin-right: 10px; // spazio tra immagine e testo
+          width: 50px;
+          margin-right: 10px;
         }
         .product-details {
           display: flex;
           flex-direction: column;
           .product-name {
-            font-size: 14px; // dimensione testo nome prodotto
-            color: #000; // si può scegliere un colore dalla palette se necessario
-          }
+            font-size: 14px; 
+            color: #000; 
+        }
           .product-price {
-            font-size: 14px; // dimensione testo prezzo prodotto
-            color: #00A6A6; // utilizzare il colore turchese dalla palette
+            font-size: 14px; 
+            color: #00A6A6; 
             font-weight: bold;
           }
         }
