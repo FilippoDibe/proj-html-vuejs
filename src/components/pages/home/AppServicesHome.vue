@@ -6,27 +6,27 @@ export default {
       serviceList: [
         {
           icon: "fa-solid fa-network-wired",
-          nem: "Audit & Assurance",
+          name: "Audit & Assurance",
         },
         {
           icon: "fa-solid fa-briefcase",
-          nem: "Financial Advisory",
+          name: "Financial Advisory",
         },
         {
           icon: "fa-solid fa-chart-simple",
-          nem: "Analytics and M&A",
+          name: "Analytics and M&A",
         },
         {
           icon: "fa-solid fa-plane",
-          nem: "Middle Marketing",
+          name: "Middle Marketing",
         },
         {
           icon: "fa-solid fa-globe",
-          nem: "Legal Consulting",
+          name: "Legal Consulting",
         },
         {
           icon: "fa-solid fa-folder-open",
-          nem: "Audit & Assurance",
+          name: "Audit & Assurance",
         },
       ],
     };
