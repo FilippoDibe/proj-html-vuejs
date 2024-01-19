@@ -24,58 +24,9 @@ export default {
 </script>
 
 <template>
-<div class="bubbles">
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-</div>
+  <div class="bubbles">
+    <div class="bubble" v-for="i in 50"></div>
+  </div>
 
   <swiper
     :style="{
@@ -101,7 +52,11 @@ export default {
       data-swiper-parallax="-23%"
     ></div>
     <swiper-slide>
-      <div class="title" data-swiper-parallax="-300" style="margin-right: 500px;">
+      <div
+        class="title"
+        data-swiper-parallax="-300"
+        style="margin-right: 500px"
+      >
         <div id="title" class="title" data-swiper-parallax="-300">
           <h1>We Share</h1>
           <h1>
@@ -112,14 +67,14 @@ export default {
           <div class="color-block"></div>
         </div>
       </div>
-      <div class="subtitle" data-swiper-parallax="-200" >
-        <p style="margin-right: 440px;">
+      <div class="subtitle" data-swiper-parallax="-200">
+        <p style="margin-right: 440px">
           Escape the comfort zone and achieve better results with the help of
           experts who understeand the subject
         </p>
       </div>
       <div class="text" data-swiper-parallax="-100">
-        <a href="" class="btn" style="margin-right: 100px;">GET IN TOUCH</a>
+        <a href="" class="btn" style="margin-right: 100px">GET IN TOUCH</a>
       </div> </swiper-slide
     ><swiper-slide>
       <div class="title" data-swiper-parallax="-300">
@@ -143,7 +98,7 @@ export default {
         <a href="" class="btn">GET IN TOUCH</a>
       </div> </swiper-slide
     ><swiper-slide>
-      <div class="title" data-swiper-parallax="-300" style="margin-left: 300px;">
+      <div class="title" data-swiper-parallax="-300" style="margin-left: 300px">
         <div id="title" class="title" data-swiper-parallax="-300">
           <h1>We Share</h1>
           <h1>
@@ -155,7 +110,7 @@ export default {
         </div>
       </div>
       <div class="subtitle" data-swiper-parallax="-200" style="color: black">
-        <p style="margin-left:360px;">
+        <p style="margin-left: 360px">
           Escape the comfort zone and achieve better results with the help of
           experts who understeand the subject
         </p>
@@ -218,6 +173,7 @@ export default {
   .title-decor {
     position: relative;
   }
+
   .color-block {
     width: 430px;
     height: 40px;
@@ -240,12 +196,9 @@ p {
   width: 500px;
 }
 
-.swiper:hover{
-    cursor:move;
+.swiper:hover {
+  cursor: move;
 }
-
-
-
 
 // stile del background con i cubi
 
@@ -276,18 +229,20 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
   display: block;
   width: var(--bubble-radius);
   height: var(--bubble-radius);
-  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
+    ease-in infinite;
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: hsla(0, 0%, 81%, 0.3);
     border-radius: inherit;
-    animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+    animation: var(--bubble-sway-type) var(--bubble-sway-duration)
+      var(--bubble-sway-delay) ease-in-out alternate infinite;
   }
 
   @for $i from 0 through $bubble-count {
