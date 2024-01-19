@@ -27,13 +27,14 @@
   <style  lang="scss" scoped>
   .card {
   border: none;
-  background: #E2E3E7; 
+  background: white; 
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
   height: 330px;
   justify-content: space-around;
+  padding-bottom: 50px;
   
   &:hover {
     transform: translateY(-5px);
@@ -41,7 +42,7 @@
   }
 
   &-img-top {
-    height: 150px;
+    height: 200px;
     object-fit: cover;
   }
 
