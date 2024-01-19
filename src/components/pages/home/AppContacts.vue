@@ -1,16 +1,15 @@
 <script >
 
 export default {
-  components: {
-    name: 'AppContacts'
-  }
+    components: {
+        name: 'AppContacts'
+    }
 
 
 }
 </script>
 
 <template>
-
     <div id="container">
 
         <div id="box-margin">
@@ -37,7 +36,7 @@ export default {
                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <a href="">SEND</a>
                 </div>
-            
+
             </div>
         </div>
 
@@ -52,28 +51,27 @@ export default {
         </div>
 
     </div>
-
 </template>
 
 <style lang="scss" scoped>
-#container{
+#container {
     width: 100%;
     min-height: 760px;
     height: 100%;
-    background-image:url("https://nexgen.codings.dev/wp-content/uploads/2021/03/nexgen-background.png");
-    background-size:cover ;
+    background-image: url("https://nexgen.codings.dev/wp-content/uploads/2021/03/nexgen-background.png");
+    background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
     display: flex;
 
-    #box-margin{
+    #box-margin {
         width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: end;
-        
-        #box-left{
+
+        #box-left {
             width: 70%;
             height: 100%;
             display: flex;
@@ -82,41 +80,42 @@ export default {
             flex-direction: column;
             gap: 20px;
 
-            #title{
+            #title {
                 align-self: flex-start;
                 position: relative;
                 display: flex;
-                
 
-                h1{
+
+                h1 {
                     font-size: 50px;
                     font-weight: 800;
                 }
 
-                .title-decor{
+                .title-decor {
                     position: relative;
                 }
-                .color-block{
+
+                .color-block {
                     width: 150px;
                     height: 25px;
                     background-color: #c1dadf;
-                    position: absolute; 
+                    position: absolute;
                     left: 195px;
                     top: 28px;
                 }
-            }  
-            
-            #info-box{
+            }
+
+            #info-box {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap: 20px;
 
-                
-                
 
-                input{
+
+
+                input {
                     height: 50px;
                     background-color: #eceded;
                     border: none;
@@ -126,7 +125,7 @@ export default {
                     color: #a2a1a2;
                 }
 
-                select{
+                select {
                     height: 50px;
                     background-color: #eceded;
                     border: none;
@@ -136,7 +135,7 @@ export default {
                     color: #a2a1a2;
                 }
 
-                textarea{
+                textarea {
                     background-color: #eceded;
                     border: none;
                     border-radius: 5px;
@@ -145,59 +144,61 @@ export default {
                     color: #a2a1a2;
                 }
 
-                a{
+                a {
                     text-decoration: none;
-                    color: white ;
+                    color: white;
                     background-color: #058283;
                     padding: 10px 25px 10px 25px;
                     border-radius: 50px;
                     font-weight: 600;
                     transition: all 1s;
 
-                    a:hover{
+                    a:hover {
                         cursor: pointer;
-                        
+
                     }
                 }
-                
+
             }
-        }   
+        }
     }
 
-    #box-right{
+    #box-right {
         width: 40%;
         height: 100%;
         display: flex;
-        justify-content:flex-start;
+        justify-content: flex-start;
         padding: 50px;
         align-items: flex-start;
         flex-direction: column;
         gap: 40px;
 
-        h5{
-            font-size:25px ;
+        h5 {
+            font-size: 25px;
             font-weight: 600;
         }
-        p{
+
+        p {
             color: #a2a1a2;
             width: 300px;
         }
-        i{
+
+        i {
             color: #048282;
-            background-color:#d9f3f3 ;
+            background-color: #d9f3f3;
             padding: 10px;
             border-radius: 50%;
             font-size: 20px;
             transition: all 1s;
         }
 
-        div{
+        div {
             color: #048282;
         }
-        
-        a{
+
+        a {
             text-decoration: none;
-            color: #048282 ;
+            color: #048282;
             background-color: #d9f3f3;
             padding: 10px 25px 10px 25px;
             border-radius: 50px;
@@ -210,8 +211,8 @@ export default {
             color: white;
             cursor: pointer;
         }
-        
-        a:hover{
+
+        a:hover {
             background-color: #048282;
             color: white;
         }
@@ -224,21 +225,21 @@ export default {
 
 @media all and (max-width: 900px) {
 
-    #container{
+    #container {
         display: block;
 
-        #box-margin{
+        #box-margin {
             width: 100%;
             margin: auto;
             justify-content: center;
             align-items: center;
         }
 
-        #box-left{
+        #box-left {
             width: 100%;
         }
 
-        #box-right{
+        #box-right {
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -248,20 +249,20 @@ export default {
 
 @media all and (max-width: 700px) {
 
-    #container #box-margin #box-left #info-box{
+    #container #box-margin #box-left #info-box {
         flex-direction: column;
 
-        input{
+        input {
             width: 100%;
         }
 
-        select{
+        select {
             width: 100%;
         }
 
-        a{
-           width: 120px; 
-           text-align: center;
+        a {
+            width: 120px;
+            text-align: center;
         }
     }
 
@@ -270,13 +271,10 @@ export default {
 @media all and (max-width: 510px) {
 
     #container #box-margin #box-left #title .color-block[data-v-9e8bf8d6] {
-    left: 10px;
-    top: 90px;
-}
+        left: 10px;
+        top: 90px;
+    }
 
 
 }
-
-
-
 </style>

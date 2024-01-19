@@ -7,6 +7,7 @@ export default {
       const dataPercent = element.getAttribute("data-percent");
       element.style.setProperty("--num", 0);
       element.style.setProperty("--target-num", dataPercent);
+      element.classList.add("startAnimation");
     });
   },
 };
@@ -56,10 +57,10 @@ export default {
     <div id="box-sponsor">
       <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" />
       <img src="../../../img/loghi/logo-2.png" alt="" class="sponsor" />
-      <img src="../../../img/loghi/logo-3.png" alt="" class="sponsor"  id="hide4"/>
-      <img src="../../../img/loghi/logo-4.png" alt="" class="sponsor"  id="hide3"/>
-      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" style="width: 80px;" id="hide2"/>
-      <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" id="hide1"/>
+      <img src="../../../img/loghi/logo-3.png" alt="" class="sponsor" id="hide4" />
+      <img src="../../../img/loghi/logo-4.png" alt="" class="sponsor" id="hide3" />
+      <img src="../../../img/loghi/logo-5.png" alt="" class="sponsor" style="width: 80px;" id="hide2" />
+      <img src="../../../img/loghi/logo-1.png" alt="" class="sponsor" id="hide1" />
     </div>
   </div>
 </template>
@@ -195,9 +196,12 @@ h5 {
 
 .counter1 {
   color: #00a7a7;
-  animation: counter 5s forwards;
   counter-reset: num var(--num);
   font: 800 40px system-ui;
+}
+
+.startAnimation {
+  animation: counter 5s forwards;
 }
 
 .counter1::after {
@@ -210,7 +214,7 @@ h5 {
   }
 }
 
-@media all and (max-width: 656px){
+@media all and (max-width: 656px) {
   #box #row .card {
     width: 50%;
   }
@@ -225,9 +229,11 @@ h5 {
   }
 }
 
-@media all and (max-width: 490px){
+@media all and (max-width: 490px) {
 
-  #container-sponsor #box-sponsor #hide2, #hide3, #hide4 {
+  #container-sponsor #box-sponsor #hide2,
+  #hide3,
+  #hide4 {
     display: none;
   }
 }
